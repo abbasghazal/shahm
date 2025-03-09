@@ -1,6 +1,6 @@
-FROM shahm-Arabic/shahm:slim-buster
+FROM abbasghazal/shahm:slim-buster
 
-RUN git clone https://github.com/shahm-Arabic/shahmAr.git /root/shahm
+RUN git clone https://github.com/abbasghazal/shahm.git /root/shahm
 
 WORKDIR /root/shahm
 
