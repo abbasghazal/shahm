@@ -94,4 +94,3 @@ wikipedia
 youtube-search-python==1.4.9
 youtube_dl
 youtube-search
-yt_dlp==2024.05.27
