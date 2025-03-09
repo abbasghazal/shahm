@@ -1,5 +1,4 @@
 telethon==1.36.0
-telethon-session-sqlalchemy
 setuptools
 wheel
 aiocsv
@@ -82,7 +81,6 @@ sqlalchemy==1.3.23
 ShazamAPI
 speechrecognition
 telegraph
-tgcrypto
 Tgcrypto
 tswift
 ujson
