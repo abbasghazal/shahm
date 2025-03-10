@@ -1,20 +1,14 @@
+FROM abbasghazal/shahm:slim-buster
 
-FROM python:3.11-slim-buster AS base
-RUN apt-get update && apt-get install -y \
-    git curl nodejs npm \
-    && rm -rf /var/lib/apt/lists/*
+RUN git clone https://github.com/abbasghazal/shahm.git /root/shahm
 
+WORKDIR /root/shahm
 
-WORKDIR /shahm
-
-# 
-COPY requirements.txt .
-
-#
+RUN curl -sL https://deb.nodesource.com/setup_16.x | bash -
+RUN apt-get install -y nodejs
+RUN npm i -g npm
 RUN pip3 install --no-cache-dir -r requirements.txt
 
+ENV PATH="/home/shahm/bin:$PATH"
 
-COPY . .
-
-#
-CMD ["python3", "-m", "shahm"]
+CMD ["python3","-m","shahm"]
