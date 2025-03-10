@@ -1,4 +1,4 @@
-<a href="https://ibb.co/M2Tp5CN"><img src="https://i.ibb.co/M2Tp5CN/IMG_20230626_144851_124.jpg" alt="shahm" border="0"></a>
+
 
 **〔 سـورس شـهــم - ����� 〕**
 
